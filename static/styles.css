@@ -1,0 +1,115 @@
+body {
+    background-color: #d5f4e6;
+    font-family: lato;
+}
+
+a {
+    color: #c94c4c;
+}
+
+button {
+    margin-top: 10px;
+}
+
+.top-menu {
+    background-color: #618685;
+    padding: 5px 0;
+}
+
+.site-title {
+    padding-left: 0;
+}
+
+.site-title a {
+    color: white;
+    font-size: 28px;
+    font-weight: 100;
+    text-decoration: none;
+}
+
+.login-button {
+    padding-right: 0;
+}
+
+.login-button a {
+    background-color: #80ced6;
+    color: white;
+    padding: 5px 10px 7px;
+    line-height: 38px;
+    text-decoration: none;
+}
+
+.create-new-button {
+    display: inline-block;
+}
+
+.create-new-button a {
+    background-color: #80ced6;
+    color: white;
+    padding: 5px 10px 7px;
+    line-height: 38px;
+}
+
+.main-section, .footer {
+    background-color: white;
+    margin-top: 20px;
+    padding: 20px 0;
+}
+
+.container.footer {
+    padding-left: 15px;
+}
+
+ul.row {
+    display: flex;
+}
+
+.color-palette {
+    display: none;
+}
+
+.center-icons {
+    justify-content: center;
+}
+
+.icons {
+    font-size: 35px;
+}
+
+.icons li {
+    list-style-type: none;
+    padding: 0 1em 0 0;
+}
+
+.icons li .label {
+    display: none;
+}
+
+h2 {
+    color: #140B38;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.category-list a, .items-list a {
+    color: black;
+}
+
+.category-list ul, .items-list ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.items-list li span {
+    color: #ADAEAF;
+}
+
+.container {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#signInButton {
+    margin-top: 22px;
+}

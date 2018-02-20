@@ -1,0 +1,9 @@
+{% extends "standardbody.html" %}
+{% block content %}
+    <h2>Latest Items</h2>
+    <ul>
+        {% for item in latest_items %}
+            <li><a href="/catalog/{{ item.category.name }}/{{ item.title }}">{{ item.title }}</a> <span>({{ item.category.name }})</span></li>
+        {% endfor %}
+    </ul>
+{% endblock %}

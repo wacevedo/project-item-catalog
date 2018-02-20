@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link href='https://fonts.googleapis.com/css?family=Lato:300,400,300,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel=stylesheet type=text/css href="{{ url_for('static', filename='styles.css') }}">
+		<!--LOAD PRE-REQUISITES FOR GOOGLE SIGN IN -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<script src="//apis.google.com/js/platform.js?onload=start"></script>
+		<!-- END PRE-REQUISITES FOR GOOGLE SIGN IN -->
+	</head>
+	<body>
+		{% include "header.html" %}
+		<div class="container main-section">
+			{% with messages = get_flashed_messages() %}
+				{% if messages %}
+					<ul>
+						{% for message in messages %}
+							<li> <strong> {{ message }} </strong> </li>
+						{% endfor %}
+					</ul>
+				{% endif %}
+			{% endwith %}
+			{% block body %}
+			{% endblock %}
+		</div>
+		<footer class="row-footer">
+			<div class="container footer">
+				<ul class="row icons center-icons">
+					<li><a href="https://github.com/wilson20a94" target="_blank" class="fa fa-github"><span class="label">GitHub</span></a></li>
+					<li><a href="https://www.instagram.com/wilson_acevedo/" target="_blank" class="fa fa-instagram"><span class="label">Instagram</span></a></li>
+					<li><a href="https://www.facebook.com/wilson.acevedosanchez.1" target="_blank" class="fa fa-facebook"><span class="label">Facebook</span></a></li>
+					<li><a href="https://twitter.com/wilson_acevedo" target="_blank" class="fa fa-twitter"><span class="label">Twitter</span></a></li>
+				</ul>
+				<span>Github Repository: </span>
+				<a href="https://github.com/wacevedo/fullstack-nanodegree-vm/tree/master/vagrant/catalog">wacevedo/fullstack-nanodegree-vm/vagrant/catalog/</a>
+				<div class="color-palette">
+				  <div class="container" style="background-color:#d5f4e6;color:#000; padding: 10px 16px;">
+				  <p>HEX: #d5f4e6</p>
+				  </div>
+				  <div class="container" style="background-color:#80ced6;color:#000; padding: 10px 16px;">
+				  <p>HEX: #80ced6</p>
+				  </div>
+				  <div class="container" style="background-color:#fefbd8;color:#000; padding: 10px 16px;">
+				  <p>HEX: #fefbd8</p>
+				  </div>
+				  <div class="container" style="background-color:#618685;color:#fff; padding: 10px 16px;">
+				  <p>HEX: #618685</p>
+				  </div>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

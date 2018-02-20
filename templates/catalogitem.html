@@ -1,0 +1,6 @@
+{% extends "alternatebody.html" %}
+{% block content %}
+    <h2>{{ item.title }}</h2>
+    <p>{{ item.description }}</p>
+    <a href="/catalog/item/{{ item.title }}/edit">Edit</a> | <a href="/catalog/item/{{ item.title }}/delete">Delete</a>
+{% endblock %}

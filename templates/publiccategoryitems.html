@@ -1,0 +1,9 @@
+{% extends "standardbody.html" %}
+{% block content %}
+    <h2>{{ category_name }} items ({{ category_items.count() }} items)</h2>
+    <ul>
+        {% for item in category_items %}
+        <li><a href="/catalog/{{ category_name }}/{{ item.title }}">{{ item.title }}</a></li>
+        {% endfor %}
+    </ul>
+{% endblock %}

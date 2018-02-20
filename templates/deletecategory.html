@@ -1,0 +1,23 @@
+{% extends "standardbody.html" %}
+{% block content %}
+    <div class="row divider green">
+        <div class="col-md-12"></div>
+    </div>
+    <div class="row banner menu">
+        <div class="col-md-11 col-md-offset-1 padding-none">
+            <h1>Delete Category</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 col-md-offset-1 padding-top">
+            <form action="#" method = "post">
+                <div class="form-group">
+                <label for="name">Are you sure you want to delete?</label>
+                <div class="padding-bottom"></div>
+                <button type="submit" class="btn btn-default" id="submit">
+                <span class="glyphicon glyphicon-erase" aria-hidden="true"></span>Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+{% endblock %}

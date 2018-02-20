@@ -1,0 +1,15 @@
+{% extends "main.html" %}
+{% block body %}
+	<div class="col-md-3 category-list">
+		<h2>Categories</h2>
+		<ul>
+			{% for category in categories %}
+			<li><a href="{{ url_for('showCategoryItems', category_name = category.name) }}">{{ category.name }}</a></li>
+			{% endfor %}
+		</ul>
+	</div>
+	<div class="col-md-9 items-list">
+		{% block content %}
+		{% endblock %}
+	</div>
+{% endblock %}
